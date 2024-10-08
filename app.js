@@ -48,7 +48,6 @@ buttons.forEach(function(button) {
 					equation = answer;
 					last = answer;
 
-
 					update = true;
 				} catch(error) {
 					output.innerHTML = "Error";
