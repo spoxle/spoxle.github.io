@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* variables */
+
+:root {
+	--background-color: hsl(0, 0%, 15%);
+	--foreground-color: hsl(0, 0%, 0%);
+	--accent-color: hsl(200, 75%, 75%);
+
+	--text-color: hsl(0, 0%, 90%);
+}
+
+/* default properties */
+
+* {
+	color: var(--text-color);
+	box-sizing: border-box;
+	font-family: Poppins;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+/* body */
+
+body {
+	background-color: var(--background-color);
+}
+
+/* main top navigation bar */
+
+#navbar {
+	background-color: var(--foreground-color);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px;
+	position: sticky;
+	top: 0;
+}
+
+#navbar-links {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	& a {
+		text-decoration: none;
+		text-transform: capitalize;
+		border-radius: 10px;
+		padding: 10px 15px 10px 15px;
+
+		transition: all 250ms;
+	}
+
+	& a:hover {
+		background-color: var(--accent-color);
+		color: var(--foreground-color);
+	}
+}
